@@ -5,8 +5,8 @@
             <h1>无聊UI</h1>
             <h2>一个好看的UI框架</h2>
             <p class="actions">
-                <a>GitHub</a>
-                <a>开始</a>
+                <a href="https://github.com">GitHub</a>
+                <router-link to="/doc">开始</router-link>
             </p>
         </div>
     </div>
