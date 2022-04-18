@@ -1,9 +1,9 @@
 <template>
     <div>
-        <Topnav />
+        <Topnav class="topnav" />
         <div class="banner">
-            <h1>无聊UI</h1>
-            <h2>一个好看的UI框架</h2>
+            <h1>灵感 UI</h1>
+            <h2>一个好看的 UI 框架</h2>
             <p class="actions">
                 <a href="https://github.com">GitHub</a>
                 <router-link to="/doc">开始</router-link>
@@ -25,7 +25,7 @@ export default{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: lightgreen;
+  background: #e5bb9c;
   > .actions{
     padding: 8px 0;
     a {
@@ -38,6 +38,11 @@ export default{
       border-radius: $h/2;
       padding: 0 8px;
     }
+  }
+}
+::v-deep{
+  .topnav{
+    box-shadow:none;
   }
 }
 </style>

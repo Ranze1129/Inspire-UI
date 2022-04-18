@@ -25,10 +25,15 @@ export default {
 
 <style lang="scss" scoped>
 .topnav {
-  background: pink;
+  background: white;
+  border-bottom: 1px solid lightgrey;
+  box-shadow: 0 2px 12px lightgrey;
   display: flex;
   padding: 16px;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 10;
   justify-content: center;
   align-items: center;
