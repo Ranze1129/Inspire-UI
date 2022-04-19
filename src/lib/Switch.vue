@@ -1,5 +1,7 @@
 <template>
-  <button @click="toggle" :class="{checked:value}">
+  <button @click="toggle"
+          class="inspire-switch"
+          :class="{'inspire-checked':value}">
     <span></span>
   </button>
 </template>
@@ -19,10 +21,10 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 $h: 22px;
 $h2: $h - 4px;
-button {
+.inspire-switch {
   height: $h;
   width: $h*2;
   border: none;
@@ -40,7 +42,7 @@ button {
     border-radius: $h/2;
     transition: all 250ms;
   }
-  &.checked {
+  &.inspire-checked {
     background: #19ade7;
     > span {
       left: calc(100% - #{$h2} - 2px)
@@ -54,7 +56,7 @@ button {
       width: $h2 + 4px;
     }
   }
-  &.checked:active {
+  &.inspire-checked:active {
     > span {
       width: $h2 + 4px;
       margin-left: -4px;
