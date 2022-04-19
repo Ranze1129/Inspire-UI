@@ -75,6 +75,7 @@ aside {
   left: 0;
   padding: 82px 16px 16px;
   height: 100%;
+  z-index: 10;
   > h2 {
     margin-bottom: 4px;
   }

@@ -29,6 +29,7 @@ button {
   background: #cbcdce;
   border-radius: $h/2;
   position: relative;
+  z-index: 0;
   > span {
     position: absolute;
     top: 2px;
