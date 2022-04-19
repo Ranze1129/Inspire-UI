@@ -62,8 +62,8 @@ export default {
   }
   > main {
     flex-grow: 1;
-    padding: 16px;
     background: white;
+    padding: 28px 16px 16px;
   }
 }
 aside {
