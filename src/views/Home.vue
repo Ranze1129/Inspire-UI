@@ -40,9 +40,7 @@ export default{
     }
   }
 }
-::v-deep{
-  .topnav{
+::v-deep(.topnav){
     box-shadow:none;
-  }
 }
 </style>
