@@ -3,12 +3,12 @@
     <div class="inspire-dialog-overlay" @click="onClickOverlay"></div>
     <div class="inspire-dialog-wrapper">
       <div class="inspire-dialog">
-        <header>标题
+        <header>
+          <slot name="title"/>
           <span @click="close" class="inspire-dialog-close"></span>
         </header>
         <main>
-          <p>第一行字</p>
-          <p>第二行字</p>
+          <slot name="content"/>
         </main>
         <footer>
           <Button @click="ok" level="main">确 定</Button>
