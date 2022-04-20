@@ -52,9 +52,10 @@ $h: 32px;
 $border-color: #d9d9d9;
 $color: #333;
 $blue: #40a9ff;
-$radius: 4px;
-$red: red;
+$radius: 6px;
+$danger: rgb(245, 56, 56);
 $grey: grey;
+$success:rgb(103, 194, 58);
 .inspire-button {
   box-sizing: border-box;
   height: $h;
@@ -97,7 +98,7 @@ $grey: grey;
     box-shadow: none;
     color: inherit;
     &:hover, &:focus {
-      background: darken(white, 5%);;
+      background: lighten(white, 5%);;
     }
   }
   &.inspire-size-big {
@@ -117,27 +118,37 @@ $grey: grey;
       border-color: $blue;
       &:hover,
       &:focus {
-        background: darken($blue, 10%);
-        border-color: darken($blue, 10%);
+        background: lighten($blue, 10%);
+        border-color: lighten($blue, 10%);
       }
     }
     &.inspire-level-danger {
-      background: $red;
-      border-color: $red;
+      background: $danger;
+      border-color: $danger;
       color: white;
       &:hover,
       &:focus {
-        background: darken($red, 10%);
-        border-color: darken($red, 10%);
+        background: lighten($danger, 10%);
+        border-color: lighten($danger, 10%);
+      }
+    }
+    &.inspire-level-success {
+      background: $success;
+      border-color: $success;
+      color: white;
+      &:hover,
+      &:focus {
+        background: lighten($success, 10%);
+        border-color: lighten($success, 10%);
       }
     }
   }
   &.inspire-theme-link {
     &.inspire-level-danger {
-      color: $red;
+      color: $danger;
       &:hover,
       &:focus {
-        color: darken($red, 10%);
+        color: lighten($danger, 10%);
       }
     }
   }
@@ -146,14 +157,14 @@ $grey: grey;
       color: $blue;
       &:hover,
       &:focus {
-        color: darken($blue, 10%);
+        color: lighten($blue, 10%);
       }
     }
     &.inspire-level-danger {
-      color: $red;
+      color: $danger;
       &:hover,
       &:focus {
-        color: darken($red, 10%);
+        color: lighten($danger, 10%);
       }
     }
   }
