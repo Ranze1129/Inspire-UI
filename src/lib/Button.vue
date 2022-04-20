@@ -1,6 +1,8 @@
 <template>
   <button class="inspire-button"
-          :class="classes">
+          :class="classes"
+          :disabled="disabled">
+    <span v-if="loading" class="inspire-loadingIndicator"></span>
     <slot/>
   </button>
 </template>
@@ -20,8 +22,16 @@ export default {
     },
     level: {
       type: String,
-      default: "normal",
+      default: 'normal',
     },
+    disabled: {
+      type: Boolean,
+      default: false,
+    },
+    loading: {
+      type: Boolean,
+      default: false,
+    }
   },
   setup(props) {
     const {theme, size, level} = props;
@@ -44,6 +54,7 @@ $color: #333;
 $blue: #40a9ff;
 $radius: 4px;
 $red: red;
+$grey: grey;
 .inspire-button {
   box-sizing: border-box;
   height: $h;
@@ -146,5 +157,35 @@ $red: red;
       }
     }
   }
+  &.inspire-theme-button {
+    &[disabled] {
+      cursor: not-allowed;
+      color: $grey;
+      &:hover {
+        border-color: $grey;
+      }
+    }
+  }
+  &.inspire-theme-link, &.inspire-theme-text {
+    &[disabled] {
+      cursor: not-allowed;
+      color: $grey;
+    }
+  }
+  >.inspire-loadingIndicator{
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    margin-right: 4px;
+    border-radius: 8px;
+    border-color: $blue $blue $blue transparent;
+    border-style: solid;
+    border-width: 2px;
+    animation: inspire-spin 1s infinite linear;
+  }
+}
+@keyframes inspire-spin {
+  0%{transform: rotate(0deg)}
+  100%{transform: rotate(360deg)}
 }
 </style>
