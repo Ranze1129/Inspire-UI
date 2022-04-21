@@ -1,19 +1,22 @@
 <template>
   <div class="topnav">
-    <router-link to="/" class="logo">
-      <svg class="icon">
-        <use xlink:href="#icon-inspire"></use>
+    <div class="top">
+      <svg v-if="toggleMenuButtonVisible"
+           class="toggleAside" @click="toggleMenu">
+        <use xlink:href="#icon-menu"></use>
       </svg>
-    </router-link>
+      <router-link to="/" class="logo">
+        <svg class="icon">
+          <use xlink:href="#icon-inspire"></use>
+        </svg>
+        <p>灵感 UI</p>
+      </router-link>
+    </div>
     <ul class="menu">
       <li>
         <router-link to="/doc">文档</router-link>
       </li>
     </ul>
-    <svg v-if="toggleMenuButtonVisible"
-        class="toggleAside" @click="toggleMenu">
-        <use xlink:href="#icon-menu"></use>
-    </svg>
   </div>
 </template>
 
@@ -51,33 +54,46 @@ $color: #e44a09;
   left: 0;
   width: 100%;
   z-index: 11;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  > .logo {
-    max-width: 6em;
-    margin-right: auto;
-    >svg{
+  > .top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    >a:hover {
+      text-decoration: none;
+    }
+    >.logo {
+      max-width: 6em;
+      display: flex;
+      align-items: center;
+      >svg{
+        width: 32px;
+        height: 32px;
+        margin-right: 5px;
+      }
+    }
+    > .toggleAside {
       width: 32px;
       height: 32px;
+      //margin-right: 94px;
+      transform: translateY(-2px);
+      display: none;
     }
   }
+
   > .menu {
     display: flex;
     white-space: nowrap;
     flex-wrap: nowrap;
     > li {
       margin: 0 1em;
+      >a:hover {
+        text-decoration: none;
+      }
     }
   }
-  > .toggleAside {
-    width: 32px;
-    height: 32px;
-    position: absolute;
-    left: 16px;
-    top: 50%;
-    transform: translateY(-50%);
-    display: none;
-  }
+
   @media (max-width: 500px) {
     > .menu {
       display: none;
@@ -85,7 +101,12 @@ $color: #e44a09;
     > .logo {
       margin: 0 auto;
     }
-    >.toggleAside{    display: inline-block;}
+
+    >.top{
+      flex-grow: 0.4;
+      justify-content: space-between;
+      >.toggleAside{ display: inline-block;}
+    }
   }
 }
 </style>

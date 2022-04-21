@@ -67,6 +67,10 @@ $color: #e44a09;
     display: flex;
     flex-wrap: wrap;
     > li {
+      @media (max-width: 400px) {
+        width: 380px;
+        margin: 16px 2px 16px 8px;
+      }
       width: 400px;
       margin: 16px 0;
       display: grid;
