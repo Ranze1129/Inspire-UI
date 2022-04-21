@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="topnavAndBanner">
         <Topnav class="topnav" />
         <div class="banner">
             <h1>灵感 UI</h1>
@@ -19,13 +19,15 @@ export default{
 </script>
 
 <style lang="scss" scoped>
+.topnavAndBanner{
+  background: linear-gradient(145deg, rgba(236,171,131,1) 0%, rgba(245,136,79,1) 51%, rgba(242,106,64,1) 100%);
+}
 .banner {
   padding: 100px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: #e5bb9c;
   > .actions{
     padding: 8px 0;
     a {

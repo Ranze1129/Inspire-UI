@@ -25,9 +25,9 @@ export default {
 
 <style lang="scss" scoped>
 .topnav {
-  background: white;
-  border-bottom: 1px solid lightgrey;
-  box-shadow: 0 2px 12px lightgrey;
+  //background: white;
+  //border-bottom: 1px solid lightgrey;
+  //box-shadow: 0 2px 12px lightgrey;
   display: flex;
   padding: 16px;
   position: fixed;
