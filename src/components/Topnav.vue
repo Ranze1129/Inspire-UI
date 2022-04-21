@@ -1,6 +1,10 @@
 <template>
   <div class="topnav">
-    <div class="logo" @click="toggleMenu">LOGO</div>
+    <div class="logo" @click="toggleMenu">
+      <svg class="icon">
+        <use xlink:href="#icon-inspire"></use>
+      </svg>
+    </div>
     <ul class="menu">
       <li>菜单1</li>
       <li>菜单2</li>
@@ -24,10 +28,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+$color: #e44a09;
 .topnav {
   //background: white;
   //border-bottom: 1px solid lightgrey;
   //box-shadow: 0 2px 12px lightgrey;
+  color: $color;
   display: flex;
   padding: 16px;
   position: fixed;
@@ -40,6 +46,10 @@ export default {
   > .logo {
     max-width: 6em;
     margin-right: auto;
+    >svg{
+      width: 32px;
+      height: 32px;
+    }
   }
   > .menu {
     display: flex;
