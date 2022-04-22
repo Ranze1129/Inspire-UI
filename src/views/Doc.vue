@@ -79,7 +79,7 @@ $red: #fd5d08;
 }
 aside {
   background: white;
-  border: 1px solid #e5e3e3;
+  border-right: 1px solid #e5e3e3;
   width: 150px;
   position: fixed;
   top: 0;
