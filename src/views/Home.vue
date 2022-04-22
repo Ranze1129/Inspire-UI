@@ -73,6 +73,7 @@ $color: #e44a09;
       }
       width: 400px;
       margin: 16px 0;
+      padding-left: 4px;
       display: grid;
       justify-content: start;
       align-content: space-between;

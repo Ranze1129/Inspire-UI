@@ -43,12 +43,9 @@ export default {
 <style lang="scss" scoped>
 $color: #e44a09;
 .topnav {
-  //background: white;
-  //border-bottom: 1px solid lightgrey;
-  //box-shadow: 0 2px 12px lightgrey;
   color: $color;
   display: flex;
-  padding: 16px;
+  padding: 12px 26px;
   position: fixed;
   top: 0;
   left: 0;
@@ -76,7 +73,6 @@ $color: #e44a09;
     > .toggleAside {
       width: 32px;
       height: 32px;
-      //margin-right: 94px;
       transform: translateY(-2px);
       display: none;
     }
@@ -95,6 +91,7 @@ $color: #e44a09;
   }
 
   @media (max-width: 500px) {
+    padding: 12px 16px;
     > .menu {
       display: none;
     }
