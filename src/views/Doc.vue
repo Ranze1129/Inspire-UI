@@ -84,6 +84,7 @@ aside {
   position: fixed;
   top: 0;
   left: 0;
+  margin:0;
   padding: 82px 0 16px;
   height: 100%;
   z-index: 10;
@@ -102,6 +103,7 @@ aside {
         text-decoration: none;
       }
       .router-link-active {
+        flex-grow: 1;
         border-right: 4px solid $red;
         background: lighten($red,40);
       }
