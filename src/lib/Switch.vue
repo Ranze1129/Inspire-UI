@@ -32,6 +32,8 @@ $h2: $h - 4px;
   border-radius: $h/2;
   position: relative;
   z-index: 0;
+  &[disabled] {
+    cursor: not-allowed;}
   > span {
     position: absolute;
     top: 2px;
