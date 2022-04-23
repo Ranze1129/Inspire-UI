@@ -106,6 +106,7 @@ aside {
         flex-grow: 1;
         border-right: 4px solid $red;
         background: lighten($red,40);
+        box-shadow: 1px 0 0 lighten($red,40) ;
       }
     }
   }

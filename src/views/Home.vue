@@ -25,7 +25,7 @@
             <use xlink:href="#icon-ts"></use>
           </svg>
           <h3>基于 TypeScript </h3>
-          <p>源代码采用 TypeScript 书写（非严格检查）</p>
+          <p>源代码采用 TypeScript 书写</p>
         </li>
         <li>
           <svg>
@@ -56,22 +56,27 @@ $color: #e44a09;
 }
 .features {
   margin: 64px auto;
-  width: 400px;
+  padding: 0 16px;
   @media (min-width: 800px) {
     width: 800px;
+    >ul {
+      >li {
+        width: 50%;
+      }
+    }
   }
   @media (min-width: 1200px) {
     width: 1200px;
+    >ul {
+      >li {
+        width: 33.3333%;
+      }
+    }
   }
   > ul {
     display: flex;
     flex-wrap: wrap;
     > li {
-      @media (max-width: 400px) {
-        width: 380px;
-        margin: 16px 2px 16px 8px;
-      }
-      width: 400px;
       margin: 16px 0;
       padding-left: 4px;
       display: grid;
@@ -92,7 +97,7 @@ $color: #e44a09;
         font-size: 28px;
       }
       > p {
-        grid-area: text
+        grid-area: text;
       }
     }
   }
