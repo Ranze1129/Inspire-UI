@@ -54,10 +54,9 @@ $red: #fd5d08;
 
   > .nav {
     flex-shrink: 0;
-  //  background: white;
-    background-image:url('../assets/background2.jpg');
+    background: rgba(255,255,255,0.6);
     border-bottom: 1px solid lightgrey;
-    box-shadow: lightgrey 0 2px 14px;
+    box-shadow: lightgrey  0 1px 8px;
   }
   > .content {
     flex-grow: 1;
@@ -70,17 +69,18 @@ $red: #fd5d08;
 }
 .content {
   display: flex;
+  background-image:url('../assets/background2.jpg');
   > aside {
     flex-shrink: 0;
   }
   > main {
     flex-grow: 1;
-    background: white;
+    background: rgba(255,255,255,0.7);
     padding: 28px 18px 16px;
   }
 }
 aside {
-  background: white;
+  background: rgba(255,255,255,0.7);
   border-right: 1px solid #e5e3e3;
   width: 150px;
   position: fixed;

@@ -58,10 +58,6 @@ $color: #e44a09;
   width:100%;
   height:100%;
 }
-.topnavAndBanner {
-  //background: linear-gradient(145deg, rgba(245, 189, 155, 1) 0%, rgba(247, 170, 130, 1) 52%, rgba(247, 159, 106, 1) 100%);
-  //clip-path: ellipse(80% 60% at 50% 38%);
-}
 .features {
   margin: 64px auto;
   padding: 0 16px;
@@ -132,6 +128,7 @@ $color: #e44a09;
       border-radius: $border-radius;
       &:hover {
         text-decoration: none;
+        background: #f54a07;
       }
     }
   }
