@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="background">
     <div class="topnavAndBanner">
       <Topnav class="topnav"/>
       <div class="banner">
@@ -50,9 +50,17 @@ export default{
 $red: #fd5d08;
 $border-radius: 22px;
 $color: #e44a09;
+.background{
+  position:fixed;
+  top: 0;
+  left: 0;
+  background-image:url('../assets/background.jpeg');
+  width:100%;
+  height:100%;
+}
 .topnavAndBanner {
-  background: linear-gradient(145deg, rgba(245, 189, 155, 1) 0%, rgba(247, 170, 130, 1) 52%, rgba(247, 159, 106, 1) 100%);
-  clip-path: ellipse(80% 60% at 50% 38%);
+  //background: linear-gradient(145deg, rgba(245, 189, 155, 1) 0%, rgba(247, 170, 130, 1) 52%, rgba(247, 159, 106, 1) 100%);
+  //clip-path: ellipse(80% 60% at 50% 38%);
 }
 .features {
   margin: 64px auto;
@@ -104,13 +112,17 @@ $color: #e44a09;
 }
 .banner {
   color: $color;
-  padding: 100px 0;
+  padding: 100px  0 38px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  >h2{
+    padding: 10px 0 0 0;
+    color: #ff7c46;
+  }
   > .actions {
-    padding: 8px 0;
+    padding:56px 8px  0;
     a {
       color: white;
       margin: 0 8px;
@@ -124,7 +136,7 @@ $color: #e44a09;
     }
   }
 }
-::v-deep(.topnav){
+:deep(.topnav){
     box-shadow:none;
 }
 </style>

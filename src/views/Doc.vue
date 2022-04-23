@@ -54,7 +54,8 @@ $red: #fd5d08;
 
   > .nav {
     flex-shrink: 0;
-    background: white;
+  //  background: white;
+    background-image:url('../assets/background2.jpg');
     border-bottom: 1px solid lightgrey;
     box-shadow: lightgrey 0 2px 14px;
   }
