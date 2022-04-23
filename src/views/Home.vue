@@ -4,7 +4,7 @@
       <Topnav class="topnav"/>
       <div class="banner">
         <h1>灵感 UI</h1>
-        <h2>一个好看的 UI 框架</h2>
+        <h2>发挥你的灵感，展现不一样的世界</h2>
         <p class="actions">
           <a href="https://github.com">GitHub</a>
           <router-link to="/doc">开始</router-link>
