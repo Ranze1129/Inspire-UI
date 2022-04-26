@@ -23,6 +23,12 @@
               <li>
                 <router-link to="/doc/tabs">Tabs 组件</router-link>
               </li>
+              <li>
+                <router-link to="/doc/message">Message 组件</router-link>
+              </li>
+              <li>
+                <router-link to="/doc/input">Input 组件</router-link>
+              </li>
             </ol>
           </aside>
             <main>
@@ -54,7 +60,7 @@ $red: #fd5d08;
 
   > .nav {
     flex-shrink: 0;
-    background: rgba(255,255,255,0.6);
+    background: rgba(255,255,255,0.5);
     border-bottom: 1px solid lightgrey;
     box-shadow: lightgrey  0 1px 8px;
   }
@@ -75,12 +81,12 @@ $red: #fd5d08;
   }
   > main {
     flex-grow: 1;
-    background: rgba(255,255,255,0.7);
+    background: rgba(255,255,255,0.6);
     padding: 28px 18px 16px;
   }
 }
 aside {
-  background: rgba(255,255,255,0.7);
+  background: rgba(255,255,255,0.6);
   border-right: 1px solid #e5e3e3;
   width: 150px;
   position: fixed;

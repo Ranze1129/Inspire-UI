@@ -9,10 +9,7 @@
 
 <script lang="ts">
 import Button from '../lib/Button.vue'
-import {
-  ref,
-  h
-} from 'vue'
+import {h} from 'vue'
 import {
   openDialog
 } from '../lib/openDialog'
@@ -24,7 +21,7 @@ export default {
     const showDialog = () => {
       openDialog({
         title: h('strong', {}, '标题'),
-        content: '你好',
+        content: '这是一段信息',
         ok() {
           console.log('ok')
         },

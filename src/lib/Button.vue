@@ -3,6 +3,11 @@
           :class="classes"
           :disabled="disabled">
     <span v-if="loading" class="inspire-loadingIndicator"></span>
+    <span v-if="loadingEnd" class="inspire-loadingEndIndicator">
+      <svg>
+        <use xlink:href="#icon-trues"></use>
+      </svg>
+    </span>
     <slot/>
   </button>
 </template>
@@ -31,7 +36,11 @@ export default {
     loading: {
       type: Boolean,
       default: false,
-    }
+    },
+    loadingEnd: {
+      type: Boolean,
+      default: false,
+    },
   },
   setup(props) {
     const {theme, size, level} = props;
@@ -151,6 +160,13 @@ $success:rgb(103, 194, 58);
         color: lighten($danger, 10%);
       }
     }
+    &.inspire-level-success {
+      color: $success;
+      &:hover,
+      &:focus {
+        color: lighten($success, 10%);
+      }
+    }
   }
   &.inspire-theme-text {
     &.inspire-level-main {
@@ -165,6 +181,13 @@ $success:rgb(103, 194, 58);
       &:hover,
       &:focus {
         color: lighten($danger, 10%);
+      }
+    }
+    &.inspire-level-success {
+      color: $success;
+      &:hover,
+      &:focus {
+        color: lighten($success, 10%);
       }
     }
   }
@@ -183,7 +206,7 @@ $success:rgb(103, 194, 58);
       color: $grey;
     }
   }
-  >.inspire-loadingIndicator{
+  > .inspire-loadingIndicator {
     width: 12px;
     height: 12px;
     display: inline-block;
@@ -193,6 +216,17 @@ $success:rgb(103, 194, 58);
     border-style: solid;
     border-width: 2px;
     animation: inspire-spin 1s infinite linear;
+  }
+  >.inspire-loadingEndIndicator {
+    display: flex;
+    align-items: center;
+    >svg{
+      width: 14px;
+      height: 14px;
+      font-size: 18px;
+      display: inline-block;
+      margin-right: 4px;
+    }
   }
 }
 @keyframes inspire-spin {

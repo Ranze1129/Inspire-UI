@@ -4,12 +4,12 @@
     <div class="demo-component">
       <component :is="component"/>
     </div>
-    <div class="demo-actions">
-      <Button v-if="codeVisible" @click="hideCode">▲ 隐藏代码</Button>
-      <Button v-else @click="showCode">▼ 显示代码</Button>
-    </div>
     <div class="demo-code" v-if="codeVisible">
       <pre class="language-html" v-html="html"/>
+    </div>
+    <div class="demo-actions">
+      <Button v-if="codeVisible" @click="hideCode" theme="text">▲ 隐藏代码</Button>
+      <Button v-else @click="showCode" theme="text">▼ 显示代码</Button>
     </div>
   </div>
 </template>
@@ -59,19 +59,30 @@ $border-color: #d9d9d9;
     padding: 16px;
   }
   &-actions {
-    padding: 8px 16px;
     border-top: 1px dashed $border-color;
-    >Button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > Button {
+      padding: 22px 16px;
       color: #6a6868;
+      flex-grow: 1;
+      background: transparent;
+      &:hover {
+        color: #40a9ff;
+        background: #f9fafc;
+      }
     }
   }
   &-code {
     padding: 8px 16px;
     border-top: 1px dashed $border-color;
+
     > pre {
       line-height: 1.1;
       font-family: Consolas, 'Courier New', Courier, monospace;
       margin: 0;
+      background: #f1eeee;
     }
   }
 }
