@@ -72,7 +72,7 @@ $red: #fd5d08;
 }
 .content {
   display: flex;
-  background-image:url('../assets/background2.jpg');
+  background-image:url('https://s1.ax1x.com/2022/04/26/L7Lymd.jpg');
   > aside {
     flex-shrink: 0;
   }
