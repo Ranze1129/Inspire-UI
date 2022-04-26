@@ -1,56 +1,44 @@
 <template>
   <div>
-    <Input v-model:value="current" v-model="late"
-           placeholder="请输入内容" class="changeInput"></Input>
-    <div class="showValue">
-      <p>input事件立刻触发：</p>
-      <div class="card">{{ current }}</div>
-      <p>input事件延后触发：</p>
-      <div class="card late">{{ late }}</div>
-    </div>
-    <Input value="禁用状态" disabled></Input>
-
-    <Input value="只读内容" readonly></Input>
+    <h1>Input 示例</h1>
+    <Demo :component="Input1Demo" class="demo1"/>
+    <Demo :component="Input2Demo"/>
+    <Demo :component="Input3Demo"/>
   </div>
 </template>
 
 <script lang="ts">
-import Input from '../lib/Input.vue';
-import {ref} from 'vue';
+import Demo from './Demo.vue';
+import Input1Demo from './Input/Input1.demo.vue';
+import Input2Demo from './Input/Input2.demo.vue';
+import Input3Demo from './Input/Input3.demo.vue';
 
 export default {
-  components: {
-    Input,
-  },
+  components: {Demo},
   setup() {
-    const current = ref("我是一个 Input 组件");
-    const late = ref("我不是 Input 组件");
-    return {current, late};
-  },
-}
+    return {
+      Input1Demo,Input2Demo,Input3Demo
+    };
+  }
+};
 </script>
 
 <style lang="scss" scoped>
-
-.changeInput{
-  margin-left: 8px;
-}
-.showValue {
+.demo1 :deep(div){
+  padding-left: 8px;
   > p {
     font-size: 14px;
-    padding-left: 8px;
     margin: 4px;
   }
-  > .card {
+  >.card {
     width: 180px;
     height: 40px;
     color: #2087ee;
     font-size: 14px;
     padding: 10px;
-    margin-left: 8px;
     border-radius: 4px;
     border: 1px solid #dcdfe6;
-    &.late{
+    &.late {
       color: #0da702;
     }
   }

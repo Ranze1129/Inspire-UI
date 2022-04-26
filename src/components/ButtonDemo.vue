@@ -2,7 +2,7 @@
   <div>
     <h1>Button 示例</h1>
     <Demo :component="Button1Demo"/>
-    <Demo :component="Button3Demo" class="demo3"/>
+    <Demo :component="Button3Demo"/>
     <Demo :component="Button2Demo"/>
     <Demo :component="Button4Demo"/>
     <Demo :component="Button5Demo"/>
@@ -32,10 +32,3 @@ export default {
   },
 };
 </script>
-
-<style lang="ts" scoped>
-.demo3::v-deep div >div >Button{
-    margin-right: 14px;
-
-}
-</style>

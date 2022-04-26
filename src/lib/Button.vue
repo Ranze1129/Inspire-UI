@@ -80,9 +80,10 @@ $success:rgb(103, 194, 58);
   border-radius: $radius;
   box-shadow: 0 1px 0 fade-out(black, 0.95);
   transition: background 250ms;
-  & + & {
-    margin-left: 8px;
-  }
+  margin: 2px 4px;
+  //& + & {
+  //  margin: 4px 8px;
+  //}
   &:hover,
   &:focus {
     color: $blue;
