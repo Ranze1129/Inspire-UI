@@ -19,12 +19,11 @@
 <script lang="ts">
 import Dialog from '../../lib/Dialog.vue'
 import Button from '../../lib/Button.vue'
+// 使用时请 import {Button,Dialog} from "inspire-ui-ranze";
 import {
   ref
 } from 'vue'
-import {
-  openDialog
-} from '../../lib/openDialog'
+
 export default {
   components: {
     Dialog,

@@ -8,11 +8,11 @@
 </template>
 
 <script lang="ts">
-import Button from '../../lib/Button.vue'
-import {h} from 'vue'
-import {
-  openDialog
-} from '../../lib/openDialog'
+import Button from '../../lib/Button.vue';
+import {openDialog} from '../../lib';
+// 使用时请 import {Button,openDialog} from "inspire-ui-ranze";
+import {h} from 'vue';
+
 export default {
   components: {
     Button

@@ -8,6 +8,7 @@
 
 <script lang="ts">
 import Switch from '../../lib/Switch.vue'
+// 使用时请 import Switch from "inspire-ui-ranze";
 import {ref} from 'vue'
 export default {
   components: {

@@ -26,6 +26,7 @@
 
 <script lang="ts">
 import Button from "../../lib/Button.vue";
+//使用时请 import Button from "inspire-ui-ranze";
 export default {
   components: {
     Button

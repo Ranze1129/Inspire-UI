@@ -61,7 +61,7 @@ $color: #e44a09;
       text-decoration: none;
     }
     >.logo {
-      max-width: 6em;
+      max-width: 10em;
       display: flex;
       align-items: center;
       >svg{

@@ -50,18 +50,9 @@ export default{
 $red: #fd5d08;
 $border-radius: 22px;
 $color: #e44a09;
-.background{
-  position:fixed;
-  top: 0;
-  left: 0;
-  background-image:url('https://s1.ax1x.com/2022/04/26/L7LtT1.jpg');
-  width:100%;
-  height:100%;
-  -moz-background-size:100% 100%;
-  background-size:100% 100%;
-  @media (max-width: 500px) {
-    background-image:url('https://s1.ax1x.com/2022/04/26/L7L2kt.jpg');
-  }
+.topnavAndBanner{
+  background: linear-gradient(145deg, rgba(246,239,228,1) 0%, rgba(246,216,193,1) 58%, rgba(246,212,173,1) 100%);
+  clip-path: ellipse(80% 60% at 50% 40%);
 }
 .features {
   margin: 64px auto;
@@ -120,6 +111,7 @@ $color: #e44a09;
   flex-direction: column;
   >h2{
     padding: 10px 0 0 0;
+    margin: 0 10px;
     color: #ff7c46;
   }
   > .actions {

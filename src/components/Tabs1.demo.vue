@@ -11,6 +11,7 @@
 <script lang="ts">
 import Tabs from '../lib/Tabs.vue'
 import Tab from '../lib/Tab.vue'
+// 使用时请 import {Tabs, Tab} from "inspire-ui-ranze";
 import {
   ref
 } from 'vue'

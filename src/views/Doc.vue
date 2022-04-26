@@ -57,9 +57,9 @@ $red: #fd5d08;
 
   > .nav {
     flex-shrink: 0;
-    background: rgba(255,255,255,0.5);
+    background: linear-gradient(45deg, rgba(246, 239, 228, 1) 0%, rgba(246, 216, 193, 1) 58%, rgba(246, 212, 173, 1) 100%);
     border-bottom: 1px solid lightgrey;
-    box-shadow: lightgrey  0 1px 8px;
+    box-shadow: lightgrey 0 1px 8px;
   }
   > .content {
     flex-grow: 1;
@@ -72,27 +72,30 @@ $red: #fd5d08;
 }
 .content {
   display: flex;
-  background-image:url('https://s1.ax1x.com/2022/04/26/L7Lymd.jpg');
+  background: rgba(246, 239, 228, 1);
   > aside {
     flex-shrink: 0;
   }
   > main {
     flex-grow: 1;
-    background: rgba(255,255,255,0.7);
+    background: rgba(255, 255, 255, 0.9);
     padding: 28px 18px 16px;
   }
 }
 aside {
-  background: rgba(255,255,255,0.6);
+  background: rgba(255, 255, 255, 0.9);
   border-right: 1px solid #e5e3e3;
   width: 150px;
   position: fixed;
   top: 0;
   left: 0;
-  margin:0;
+  margin: 0;
   padding: 82px 0 16px;
   height: 100%;
   z-index: 10;
+  @media (max-width: 500px) {
+    background: white;
+  }
   > h2 {
     margin-bottom: 4px;
     padding: 0 16px;
@@ -100,7 +103,7 @@ aside {
   }
   > ol {
     > li {
-      &:hover{
+      &:hover {
         color: $color;
       }
       >a {
