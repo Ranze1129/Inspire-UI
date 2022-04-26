@@ -78,7 +78,7 @@ $red: #fd5d08;
   }
   > main {
     flex-grow: 1;
-    background: rgba(255,255,255,0.6);
+    background: rgba(255,255,255,0.7);
     padding: 28px 18px 16px;
   }
 }
@@ -96,7 +96,7 @@ aside {
   > h2 {
     margin-bottom: 4px;
     padding: 0 16px;
-    font-weight: bold;
+    font-weight: 700;
   }
   > ol {
     > li {

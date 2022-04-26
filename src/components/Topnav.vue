@@ -82,6 +82,7 @@ $color: #e44a09;
     display: flex;
     white-space: nowrap;
     flex-wrap: nowrap;
+    margin-right: 20px;
     > li {
       margin: 0 1em;
       >a:hover {
