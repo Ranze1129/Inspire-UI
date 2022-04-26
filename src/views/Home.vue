@@ -57,6 +57,11 @@ $color: #e44a09;
   background-image:url('../assets/background.jpeg');
   width:100%;
   height:100%;
+  -moz-background-size:100% 100%;
+  background-size:100% 100%;
+  @media (max-width: 500px) {
+    background-image:url('../assets/background3.jpeg');
+  }
 }
 .features {
   margin: 64px auto;

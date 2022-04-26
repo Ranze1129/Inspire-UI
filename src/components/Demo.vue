@@ -65,7 +65,7 @@ $border-color: #d9d9d9;
     align-items: center;
     > Button {
       padding: 22px 16px;
-      color: #6a6868;
+      color: #b6b4b4;
       flex-grow: 1;
       background: transparent;
       &:hover {

@@ -4,7 +4,7 @@
 然后在你的代码中写入下面的代码
 
 ```
-import {Button, Tabs, Switch, Dialog} from "inspire-ui"
+import {Button, Tabs, Switch, Dialog, Input} from "inspire-ui"
 ```
 
 就可以使用我提供的组件了。
@@ -16,11 +16,11 @@ import {Button, Tabs, Switch, Dialog} from "inspire-ui"
 ```
 <template>
   <div>
-    <Button>按钮</Button>
+    <Button>你好</Button>
   </div>
 </template>
 <script>
-import {Button, Tabs, Switch, Dialog} from "inspire-ui"
+import {Button, Tabs, Switch, Dialog, Input} from "inspire-ui"
 export default {
   components: {Button}
 }
